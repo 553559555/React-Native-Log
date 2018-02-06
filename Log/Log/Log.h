@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+//引入RN组建
 #import <React/RCTBridgeModule.h>
 #import <React/RCTLog.h>
 

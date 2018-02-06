@@ -8,16 +8,17 @@
 
 #import "Log.h"
 
+//设置打印级别
 #define CURRENTENVIRONMENT 6
 
 typedef enum : NSUInteger {
-    LEVEL_OFF,
-    LEVEL_ERROR,
-    LEVEL_WARN,
-    LEVEL_INFO,
-    LEVEL_DEBUG,
-    LEVEL_VERBOSE,
-    LEVEL_ALL
+    LEVEL_OFF,          //关闭打印
+    LEVEL_ERROR,        //打印错误  一般发布时使用
+    LEVEL_WARN,         //打印警告
+    LEVEL_INFO,         //打印信息
+    LEVEL_DEBUG,        //开发环境
+    LEVEL_VERBOSE,      //
+    LEVEL_ALL           //打印全部
 } Level;
 
 @implementation Log
